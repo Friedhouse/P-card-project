@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--Required meta tags-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!--Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+
+<!--Stylesheet-->
+
+    <link rel="stylesheet" href="css/stylesheet.css"></a>
+
+<!--Icon in window-->
+
+<link rel="icon" href="images/favicon.ico?v=2">
+
+    <title>Beyond the Scalpel</title>
+</head>
+
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/scalpel.png" width="40" height="40" alt="icon picture"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<!--List of Nav links-->
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cards</a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <li></li><a class="dropdown-item" href="#">Public</a></li>
+                        <li><a class="dropdown-item" href="#">Personal</a></li>
+                        <li><a class="dropdown-item" href="templates.html">Templates</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+<!--Login Button-->
+
+                <button class="btn btn-sm mx-2 btn-style" data-bs-toggle="modal" data-bs-target="#modalForm" style="background-color: #F1E0AC;" type="button">Log In</button>
+            </div>
+        </div>
+    </nav>
+
+<!--Modal-->
+
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color: lightgrey">
+
+<!-- Login Form -->
+
+              <form action="">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sign In</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="Username">Username<span class="text-danger">*</span></label>
+                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
+                  </div>
+      
+                  <div class="mb-3">
+                      <label for="Password">Password<span class="text-danger">*</span></label>
+                      <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
+                  </div>
+                  <div class="mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                      <label class="form-check-label" for="remember">Remember Me</label>
+                      <a href="#" class="float-end">Forgot Password</a>
+                  </div>
+                </div>
+                <div class="modal-footer pt-4">                  
+                  <button type="button" class="btn mx-auto w-100" style="background-color: #74959A;">Login</button>
+                </div>
+                <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
+            </form>
+          </div>
+        </div>
+      </div>
+    
+<body>
+
+<!--Header/Download Button-->
+
+    <header class="container-fluid top-header">
+        <div class="row mx-5">
+            <div class="col">
+                <h1>Beyond the Scalpel</h1>
+                <p class="text-heading"> Understanding the needs of our Doctor's and Surgeon's is paramount to </br>becoming effective healthcare providers in the medical setting. This preference card app can help.</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="btn btn-lg pt-5" class="apple-button" role="button" type="button" href="https://www.apple.com/app-store/">
+                        <img src="images/apple-appstore.svg"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+<!--Main features-->
+
+    <section class="container">
+        <div class="row row-content" id="features">
+            <div class="col">
+                <h2>Main Features</h2>
+            </div>
+    <!--Headers-->        
+            <div class="row feature-heading">
+                <div class="col-4">
+                    <h4>Customize</h4>
+                </div>
+                <div class="col-4">
+                    <h4>Database</h4>
+                </div>
+                <div class="col-4">
+                    <h4>Share</h4>
+                </div>
+            </div>
+            <div class="row features">
+                <div class="col-2">
+    <!--Icons-->
+                    <img class="icon" src="images/notebook.png" alt="Notebook Icon" width="80%"/>
+                </div>
+                <div class="col-2">
+                    <p>Write out your preference cards your way.</p>
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/checklist.png" alt="Notebook Icon" width="80%"/>
+                </div>
+                <div class="col-2">
+                    <p>Use our database of perferences to make your card build easier.</p>
+                </div>
+                <div class="col-2">
+                    <img class="icon" src="images/document.png" alt="Notebook Icon" width="80%"/>
+                </div>
+                <div class="col-2">
+                    <p>Share your perference cards with co-workers or traveler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <hr>
+
+<!--Why our app-->
+
+    <section class="container-fluid">
+        <div class="row row-content">
+            <div class="col-5 my-auto mx-auto">
+                <h3>Why use our preference card app?</h3>
+                <p class="p-body">We are trying to create a way to simplify the process of preference cards. Giving you full control over what you, or your team create; to allow safer and more effective teamwork in the medical setting.</p>
+            </div>
+            <div class="col-5 my-auto mx-auto">
+                <img class="medical-img" src="images/surgical-hands.jpg" width="100%" alt="Surgical instrument handling"/>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+<!--Comments section-->
+
+    <section class="container-fluid">
+        <div class="row row-content" id="contact">
+            <div class="col-12">
+                <h3>Get In Touch</h3>
+            </div>
+            <div class="col-11 mt-4 mx-auto">
+                <p>Questions, comments, or would you like to see a certain feature? Shoot myself and the team a message below and let us know. If you just want to let us know how much you love the app, that's cool too.</p>
+            </div>
+        </div>
+
+<!--Comments Form-->
+
+        <form>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here..." id="floatingTextarea" style="height: 140px;"></textarea>
+                <label for="floatingTextarea">Comments</label>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-floating">
+                        <input type="name" class="form-control" id="floatingName" placeholder="Name">
+                        <label for="floatingName">Name</label>
+                    </div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button class="btn btn-lg btn-style" type="submit" style="background-color: #F1E0AC;">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <hr>
+
+<!--Download call to action/button-->
+
+    <section class="container-fluid">
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Download now!</h3>
+            </div>
+            <div class="col-12 mt-2">
+                <p>What you you waiting for? Let's get organizing!</p>
+            </div>
+            <div class="col">
+                <a class="btn btn-lg pt-5" class="apple-button" role="button" type="button" href="https://www.apple.com/app-store/">
+                    <img src="images/apple-appstore.svg"/>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<footer>
+
+    <a href="https://www.flaticon.com/free-animated-icons/write" title="write animated icons">Write animated icons created by Freepik - Flaticon</a>
+
+</footer>
+
+<!--Bootstrap Javscript-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
