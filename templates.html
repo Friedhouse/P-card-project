@@ -20,97 +20,177 @@
     <title>Beyond the Scalpel</title>
 </head>
 
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/scalpel.png" width="40" height="40" alt="icon picture"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<nav class="navbar navbar-expand-md sticky-top navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/scalpel.png" width="40" height="40" alt="icon picture"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 <!--List of Nav links-->
 
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cards</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li<a class="dropdown-item" href="#">Public</a></li>
-                        <li<a class="dropdown-item" href="#">Personal</a></li>
-                        <li<a class="dropdown-item" href="#">Templates</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cards</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                    <li></li><a class="dropdown-item" href="#">Public</a></li>
+                    <li><a class="dropdown-item" href="#">Private</a></li>
+                    <li><a class="dropdown-item" href="templates.html">Templates</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
 
 <!--Login Button-->
 
-                <button class="btn btn-sm mx-2" data-bs-toggle="modal" data-bs-target="#modalForm" style="background-color: #F1E0AC;" type="button">Log In</button>
-            </div>
+            <button class="btn btn-sm mx-2 btn-style" data-bs-toggle="modal" data-bs-target="#modalForm" style="background-color: #F1E0AC;" type="button">Log In</button>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <!--Modal-->
 
-    <div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
+<div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background-color: lightgrey">
 
 <!-- Login Form -->
 
-              <form action="">
-                <div class="modal-header">
-                  <h5 class="modal-title">Sign In</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                      <label for="Username">Username<span class="text-danger">*</span></label>
-                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
-                  </div>
-      
-                  <div class="mb-3">
-                      <label for="Password">Password<span class="text-danger">*</span></label>
-                      <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
-                  </div>
-                  <div class="mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="remember" required>
-                      <label class="form-check-label" for="remember">Remember Me</label>
-                      <a href="#" class="float-end">Forgot Password</a>
-                  </div>
-                </div>
-                <div class="modal-footer pt-4">                  
-                  <button type="button" class="btn mx-auto w-100" style="background-color: #74959A;">Login</button>
-                </div>
-                <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
-            </form>
-          </div>
-        </div>
+          <form action="">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                  <label for="Username">Username<span class="text-danger">*</span></label>
+                  <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
+              </div>
+  
+              <div class="mb-3">
+                  <label for="Password">Password<span class="text-danger">*</span></label>
+                  <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
+              </div>
+              <div class="mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                  <label class="form-check-label" for="remember">Remember Me</label>
+                  <a href="#" class="float-end">Forgot Password</a>
+              </div>
+            </div>
+            <div class="modal-footer pt-4">                  
+              <button type="button" class="btn mx-auto w-100" style="background-color: #74959A;">Login</button>
+            </div>
+            <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
+        </form>
       </div>
+    </div>
+  </div>
     
 <body>
 
-    <header>
-        
-    </header>
+<!--Template open supplies card-->
 
-    <hr>
+    <section class="container">
+        <div class="row row-content">
+            <div class="col card">
+                <div class="card-header">
+                  Dr. Ardvark
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Coronary Artery Bypass</h5>
+                  <h5 class="card-title pb-2">Open Supplies</h5>
+        <div class="row">
+            <div class="col">
+                <ul class="card-text text-start">
+                    <li>Heart Pack #1</li>
+                    <li>Heart Pack #2</li>
+                    <li>Small Clips x8</li>
+                    <li>Medium Clips x4</li>
+                </ul>
+            </div>  
+            <div class="col">
+                <ul class="card-text text-start">
+                    <li>Large Clips x1</li>
+                    <li>Specimen Cups x2</li>
+                    <li>Bovie x2</li>
+                    <li>Vessel Cannula x2</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="card-text text-start">
+                    <li>Bulldog x2</li>
+                    <li>Vessel loops</li>
+                    <li>1x6 Felt strip</li>
+                    <li>Dermabond</li>
+                </ul>
+            </div>
+        </div>
+                <div class="card-footer">
+                  Updated 2 days ago
+                </div>
+              </div>
+    </section>
+
+<!--Template Sutures-->
+
+    <section class="container">
+        <div class="row row-content">
+            <div class="col card">
+                <div class="card-header">
+                  Dr. Ardvark
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Coronary Artery Bypass</h5>
+                  <h5 class="card-title pb-2">Sutures</h5>
+        <div class="row">
+            <div class="col">
+                <ul class="card-text text-start">
+                    <li>3-0 Monocryl PS-1 x2</li>
+                    <li>1 Vicryl CTX x2</li>
+                    <li>0 Silk CT-1 CR/8</li>
+                    <li>0 Silk PS x2</li>
+                </ul>
+            </div>  
+            <div class="col">
+                <ul class="card-text text-start">
+                    <li>7-0 Prolene BV175-8 x6</li>
+                    <li>6-0 Prolene RB-2 x4</li>
+                    <li>5-0 Prolene RB-2 x2</li>
+                    <li>3-0 Prolene SH x3</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="card-text text-start">
+                    <li>2-0 Ethibond SH x2</li>
+                    <li>4-0 Prolene BB x2</li>
+                    <li>4-0 Prolene SH x2</li>
+                </ul>
+            </div>
+        </div>
+                <div class="card-footer">
+                  Updated 10 days ago
+                </div>
+              </div>
+    </section>
+    
+
+
   
 
-<footer>
 
-</footer>
 
 <!--Bootstrap Javscript-->
 
