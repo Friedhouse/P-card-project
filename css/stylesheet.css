@@ -17,7 +17,7 @@ header {
 }
 h1 {
     font-family: 'Merriweather', serif;
-    font-size: 6em;  
+    font-size: 5em;  
     
 }
 h2{
@@ -71,6 +71,10 @@ form {
 .btn-style:hover { 
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
+                        /* Profile icons and hover effects */
+
 .doctor-profile {
     position: relative;
     margin-bottom: 50px;
@@ -99,7 +103,7 @@ form {
     bottom: -45px;
     left: -25%;
     content: "";
-    background-color: #ffffff;
+    background-color: #495371;
     -webkit-transform: rotate(-15deg);
     transform: rotate(-15deg);
 }
@@ -137,7 +141,7 @@ form {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     border-radius: 0 0 15px 15px;
-    background-color: #ffffff;
+    background-color: #495371;
 }
 .doctor-profile .doctor-info::after {
     -webkit-transition-duration: 500ms;
@@ -146,7 +150,7 @@ form {
     z-index: 1;
     width: 50px;
     height: 3px;
-    background-color: #495371;
+    background-color: #98B4AA;
     content: "";
     top: 12px;
     right: 30px;
@@ -174,7 +178,7 @@ form {
 }
 .doctor-profile:hover .doctor-thumb::after,
 .doctor-profile:focus .doctor-thumb::after {
-    background-color: #495371;
+    background-color: #98B4AA;
 }
 .doctor-profile:hover .doctor-thumb .social-info a,
 .doctor-profile:focus .doctor-thumb .social-info a {
@@ -188,17 +192,23 @@ form {
 }
 .doctor-profile:hover .doctor-info,
 .doctor-profile:focus .doctor-info {
-    background-color: #495371;
+    background-color: #98B4AA;
 }
 .doctor-profile:hover .doctor-info::after,
 .doctor-profile:focus .doctor-info::after {
-    background-color: #ffffff;
+    background-color: #495371;
 }
 .doctor-profile:hover .doctor-info h6,
 .doctor-profile:focus .doctor-info h6 {
-    color: #ffffff;
+    color: black;
 }
 .doctor-profile:hover .doctor-info p,
 .doctor-profile:focus .doctor-info p {
-    color: #ffffff;
+    color: black;
+}
+.doctor-profile .doctor-info h6 {
+    color: white;
+}
+.doctor-profile .doctor-info p {
+    color: white;
 }
