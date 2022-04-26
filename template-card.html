@@ -65,7 +65,7 @@
 
   <div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content" style="background-color: lightgrey">
+          <div class="modal-content">
 
 <!-- Login Form -->
 
@@ -90,7 +90,7 @@
                       </div>
                   </div>
                   <div class="modal-footer pt-4">                  
-                    <button type="button" class="btn mx-auto w-100" style="background-color: #F1E0AC;">Login</button>
+                    <button type="button" class="btn mx-auto w-100 text-white" style="background-color: #495371">Login</button>
                   </div>
                   <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
               </form>
@@ -106,23 +106,53 @@
         <div class="card-header">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="supplies-tab" data-bs-toggle="tab" data-bs-target="#supply-tab" type="button" role="tab" aria-controls="supply" aria-selected="true">Supplies</button>
+                    <button class="nav-link active text-dark" id="supplies-tab" data-bs-toggle="tab" data-bs-target="#supply-tab" type="button" role="tab" aria-controls="supply" aria-selected="true">Supplies</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="sutures-tab" data-bs-toggle="tab" data-bs-target="#suture-tab" type="button" role="tab" aria-controls="suture" aria-selected="false">Sutures</button>
+                    <button class="nav-link text-dark" id="sutures-tab" data-bs-toggle="tab" data-bs-target="#suture-tab" type="button" role="tab" aria-controls="suture" aria-selected="false">Sutures</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="instruments-tab" data-bs-toggle="tab" data-bs-target="#instrument-tab" type="button" role="tab" aria-controls="instrument" aria-selected="false">Instruments</button>
+                    <button class="nav-link text-dark" id="instruments-tab" data-bs-toggle="tab" data-bs-target="#instrument-tab" type="button" role="tab" aria-controls="instrument" aria-selected="false">Instruments</button>
                 </li>
             </ul>
 
-<!--Supply Card Table Body-->
+<!--Supply Card Table Title-->
 
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="supply-tab" role="tabpanel" aria-labelledby="supply-tab">                  
                     <h5 class="card-title">Dr Islam</h5>
                     <h6 class="card-text">Lower Anterior Resection (LAR)</h6>
-                    <a href="#" class="btn btn-primary">Add</a>
+    <!--Add button Modal-->
+                    <a href="#" class="btn btn-style text-white" style="background-color: #495371" data-bs-toggle="modal" data-bs-target="#addModal1" data-bs-whatever="add">Add</a>
+                    <div class="modal fade" id="addModal1" tabindex="-1" aria-labelledby="addButtonLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="addSupplyModal">Add your supplies below</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="add-to-open" class="col-form-label">Add To Open:</label>
+                                            <input type="text" class="form-control" id="add-to-open"/>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="add-to-close" class="col-form-label">Add To Hold:</label>
+                                            <input type="text" class="form-control" id="add-to-close"/>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn text-white" style="background-color: #495371">Submit</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!--Supplies Card Table Body-->
+    
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -166,10 +196,37 @@
 
 <!--Suture card table body-->
 
-              <div class="tab-pane fade" id="suture-tab" role="tabpanel" aria-labelledby="profile-tab">                  
+                <div class="tab-pane fade" id="suture-tab" role="tabpanel" aria-labelledby="profile-tab">                  
                     <h5 class="card-title">Dr Islam</h5>
                     <h6 class="card-text">Lower Anterior Resection (LAR)</h6>
-                    <a href="#" class="btn btn-primary">Add</a>
+    <!--Add Suture Button Modal-->
+                    <a href="#" class="btn btn-style text-white" style="background-color: #495371" data-bs-toggle="modal" data-bs-target="#addModal2" data-bs-whatever="add">Add</a>
+                    <div class="modal fade" id="addModal2" tabindex="-1" aria-labelledby="addButtonLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="addSutureModal">Add your suture below</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="add-to-open" class="col-form-label">Add To Open:</label>
+                                            <input type="text" class="form-control" id="add-to-open"/>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="add-to-close" class="col-form-label">Add To Hold:</label>
+                                            <input type="text" class="form-control" id="add-to-close"/>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn text-white" style="background-color: #495371">Submit</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -213,37 +270,64 @@
 
 <!--Card Instruments Body-->
 
-              <div class="tab-pane fade" id="instrument-tab" role="tabpanel" aria-labelledby="contact-tab">
-                  <h5 class="card-title">Dr Islam</h5>
-                  <h6 class="card-text">Lower Anterior Resection (LAR)</h6>
-                  <a href="#" class="btn btn-primary">Add</a>
-                  <table class="table table-hover">
-                      <thead>
-                          <tr>
-                              <th scope="col">Open</th>
-                              <th scope="col">Hold</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>Major Set</td>
-                              <td></td>
-                          </tr>
-                          <tr>
-                              <td>Bookwalter</td>
-                              <td></td>
-                          </tr>
-                          <tr>
-                              <td>GI long Set</td>
-                              <td></td>
-                          </tr>
-                      </tbody>
-                      <caption>List of instruments</caption>
-                  </table>
-              </div>      
-          </div>
-      </div>
-  </div>
+                <div class="tab-pane fade" id="instrument-tab" role="tabpanel" aria-labelledby="contact-tab">
+                    <h5 class="card-title">Dr Islam</h5>
+                    <h6 class="card-text">Lower Anterior Resection (LAR)</h6>
+    <!--Add Instrument Button Modal-->
+                    <a href="#" class="btn btn-style text-white" style="background-color: #495371" data-bs-toggle="modal" data-bs-target="#addModal3" data-bs-whatever="add">Add</a>         
+                    <div class="modal fade" id="addModal3" tabindex="-1" aria-labelledby="addButtonLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="addInstrumentModal">Add your supplies below</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="add-to-open" class="col-form-label">Add To Open:</label>
+                                            <input type="text" class="form-control" id="add-to-open"/>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="add-to-close" class="col-form-label">Add To Hold:</label>
+                                            <input type="text" class="form-control" id="add-to-close"/>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn text-white" style="background-color: #495371">Submit</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Open</th>
+                                <th scope="col">Hold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Major Set</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Bookwalter</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>GI long Set</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <caption>List of instruments</caption>
+                    </table>
+                </div>      
+            </div>
+        </div>
+    </div>
 
 
 <!--Bootstrap Javscript-->
